@@ -16,8 +16,8 @@ export const Navbar = ({click}) => {
                       <span className="cartlogo__badge">0</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to = "/">
+                    <li >
+                      <Link to = "/" className="shoplink">
                       Shop                      
                       </Link>
                     </li>
