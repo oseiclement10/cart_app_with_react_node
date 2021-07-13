@@ -4,13 +4,19 @@ import { HomeScreen } from './components/HomeScreen';
 import { ProductScreen } from './components/ProductScreen';
 import { CartScreen } from './components/CartScreen';
 import { Navbar } from './components/Navbar';
+import { Backdrop } from './components/Backdrop';
+import {useState} from 'react';
+import { SideDrawer } from './components/SideDrawer';
 function App() {
+  
+  const [sideToggle,setSideToggle] = useState(false);
+
   return (
       
      <Router>  
-      <Navbar/>
-      {/* SideDrawer */}
-      {/* BackDrop */}
+      <Navbar click = {()=>setSideToggle(true)}/>
+      <SideDrawer show = {sideToggle}/>
+      <Backdrop  show={sideToggle} click = {()=>setSideToggle(false)}/>
 
       <main>
       <Switch>

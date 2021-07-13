@@ -1,0 +1,85 @@
+.navbar{
+    width:100%;
+    height:100px;
+    background: #171717;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 1rem;
+    z-index: 50;
+}
+.navbar__logo h2{
+    color:#f4f4f4;
+    cursor:pointer;
+    font-size:1.5rem;
+}
+ul.navbar__links{
+    color:#f4f4f4;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+ul.navbar__links >li{
+    padding:6px 10px;
+    
+}
+ul.navbar__links > .cartlogo__circle{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+     background:rgb(60,60,60);
+     border-radius: 7px;
+    padding:8px;
+}
+ul.navbar__links > .cartlogo__circle:hover{
+    background-color:rgb(202, 80, 80);
+}
+
+ul.navbar__links>li>a{
+    text-decoration: none;
+    color:#f4f4f4;
+    font-size: 1.2rem;
+}
+ul.navbar__links>li .cartlogo__badge{
+    padding:2px 6px;
+    margin:8px;
+    background-color:white;
+    color:black;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+ul.navbar__links>li .icon{
+    margin-right:8px;
+}
+.harmburger__menu{
+    width:30px;
+    height:30px;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    cursor:pointer;
+}
+.harmburger__menu div{
+    background: #e2dede;
+    width:100%;
+    height:3px;
+    
+}
+.harmburger__menu:hover div{
+    background:rgb(202, 80, 80);
+}
+@media (max-width:960px){
+    ul.navbar__links{
+        display:none;
+    }
+    .harmburger__menu{
+        display:flex;
+    }
+}
+@media (max-width:500px){
+    .navbar__logo h2{
+        font-size: 1.1rem;
+    }   
+}
