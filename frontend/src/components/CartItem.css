@@ -27,9 +27,13 @@
     cursor:pointer;
     transition: all 0.3s ease-out;
 }
-.cartitem__deleteBtn:hover,.cartitem__deleteBtn:focus,.cartitem__deleteBtn:active{
+.cartitem__deleteBtn:hover{
 background: #171717;
 transform: scale(1.2);
+}
+.cartitem__deleteBtn:active{
+    background-color: white;
+    color:black;
 }
 
 @media(max-width:700px){
@@ -57,6 +61,20 @@ transform: scale(1.2);
     .cartitem__price{
         font-size:0.6rem;
     }
+   
+}
 
+@media(max-width:350px){
+    .cartitem__name{
+        font-size: 0.6rem;
+    }
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 2px 4px;
+    }
+    .cartitem__price{
+        font-size:0.6rem;
+    }
+   
 }
 
